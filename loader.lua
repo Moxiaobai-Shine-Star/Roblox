@@ -38,9 +38,9 @@ MainSection = Window:Section({
 
 Main = MainSection:Tab({ Title = "Tab", Icon = "Sword" })
 
-local gamelist = loadstring(game:HttpGet'https://raw.githubusercontent.com/Moxiaobai-Shine-Star/Roblox/refs/heads/main/data.lua')()
+local Gamelist = loadstring(game:HttpGet('https://raw.githubusercontent.com/Moxiaobai-Shine-Star/Roblox/refs/heads/main/data.lua'))()
 
-for name, exec in pairs(gamelist) do
+for name, exec in pairs(Gamelist) do
     Main:Button({
         Title = name,
         Desc = "click the button to open the script",

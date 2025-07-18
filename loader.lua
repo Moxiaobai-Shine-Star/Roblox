@@ -38,7 +38,7 @@ MainSection = Window:Section({
 
 Main = MainSection:Tab({ Title = "Tab", Icon = "Sword" })
 
-local gamelist = require("/data.lua")
+local gamelist = loadstring(game:HttpGet'https://raw.githubusercontent.com/Moxiaobai-Shine-Star/Roblox/refs/heads/main/data.lua')()
 
 for name, exec in pairs(gamelist) do
     Main:Button({
